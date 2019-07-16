@@ -11,7 +11,7 @@ public class SupplierFunctionalInterfaceExample {
 
 	
 	static Supplier<Student> studentSupplier= () -> { 
-		return new Student("Adam",2,3.6, "male",Arrays.asList("swimming", "basketball","volleyball")); 
+		return new Student("Adam",2,3.6, "male",Arrays.asList("swimming", "basketball","volleyball"),100); 
 		};
 	static Supplier<List<Student>> studentsSupplier= () -> { 
 		return StudentDataBase.getAllStudents(); 

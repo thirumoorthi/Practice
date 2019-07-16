@@ -11,11 +11,11 @@ public class PredicateExample {
 	static List<Student> students=StudentDataBase.getAllStudents();
 	
 	//static Predicate<Integer> predicate1= (i) -> {   return (i%2)==0;  };
-	static Predicate<Integer> isEvenNumber= i -> i%2==0;
-	static Predicate<Integer> isDivisibleBy5= i -> i%5==0;
+	public static Predicate<Integer> isEvenNumber= i -> i%2==0;
+	public static Predicate<Integer> isDivisibleBy5= i -> i%5==0;
 	
-	static Predicate<Student> isGradeAbove3= student -> student.getGradeLevel()>=3;
-	static Predicate<Student> isGPSAbove3point9= student -> student.getGpa()>=3.9;
+	public static Predicate<Student> isGradeAbove3= student -> student.getGradeLevel()>=3;
+	public static Predicate<Student> isGPSAbove3point9= student -> student.getGpa()>=3.9;
 	
 	public static void main(String[] args) {
 		System.out.println(isEvenNumber.test(100));
